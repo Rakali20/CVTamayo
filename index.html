@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Alexander George Tamayo - Junior Developer Resume</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background"></div>
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+    <div class="nav-left">
+      <span class="brand">Alexander G. Tamayo</span>
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="assets/Tamayo-CV.pdf" download="Tamayo-CV.pdf">Download CV</a>
+      <button id="toggle-mode" title="Toggle Light/Dark Mode">🌞</button>
+    </div>
+  </nav>
+
+  <!-- Profile Card -->
+  <main>
+    <section class="profile-card">
+      <div class="profile-img-wrapper">
+        <img src="assets/Picture.jpg" alt="Alexander George Tamayo" class="profile-img" />
+      </div>
+      <div class="profile-info">
+        <h1>Alexander George Tamayo</h1>
+        <h2 class="title">Junior Developer</h2>
+        <p class="subtitle">BS Information Systems Graduate &mdash; ACLC College of Taytay</p>
+        <p class="summary">
+          Proactive, detail-oriented, and passionate about building web solutions and supporting IT needs.<br>
+          Skilled in <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>PHP</strong>.
+        </p>
+        <div class="contact">
+          <span>📞 0963 042 2517</span>
+          <span>✉️ <a href="mailto:xandertamayo20@gmail.com">xandertamayo20@gmail.com</a></span>
+          <span>📍 Taytay, Rizal</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Navigation -->
+    <section class="section-nav">
+      <h3>Explore My Resume</h3>
+      <div class="section-btns">
+        <a href="profilesummary.php" class="section-btn">Profile Summary</a>
+        <a href="education.php" class="section-btn">Education</a>
+        <a href="areasofexpertise.php" class="section-btn">Areas of Expertise</a>
+        <a href="languages.php" class="section-btn">Languages</a>
+        <a href="workexperience.php" class="section-btn">Work Experience</a>
+        <a href="referances.php" class="section-btn">References</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Alexander George Tamayo &mdash; Junior Developer</p>
+  </footer>
+
+  <script>
+    // Dark mode toggle
+    document.getElementById('toggle-mode').onclick = function() {
+      document.body.classList.toggle('dark-mode');
+      this.textContent = document.body.classList.contains('dark-mode') ? "🌚" : "🌞";
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "Alexander George M. Tamayo",
+  "title": "Web Developer & IT Support",
+  "location": "Taytay, Rizal",
+  "email": "xandertamayo20@gmail.com",
+  "phone": "09630422517",
+  "education": [
+    "BS in Information Systems – ACLC College of Taytay",
+    "General Academic Strand – Smart Achiever Academy Subig Inc."
+  ],
+  "skills": [
+    "HTML, CSS, JavaScript, PHP",
+    "IT Support",
+    "Application Development",
+    "Logo Design"
+  ],
+  "experience": [
+    "IT Intern – B-mirk Enterprises Corporation"
+  ],
+  "references": [
+    {
+      "name": "Emmanuel Viray",
+      "role": "IT Support",
+      "email": "emmanuelviray@gmail.com",
+      "phone": "09395546678674"
+    }
+  ]
+}
