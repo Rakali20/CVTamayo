@@ -1,0 +1,198 @@
+:root {
+    --bg: #f9f9f9;
+    --text: #333;
+    --accent: #0055aa;
+    --card-bg: #ffffff;
+    --hover-glow: #e0e0ff;
+  }
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  /* Reset */
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 180px;
+    background: #004488;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+  }
+  
+  .sidebar nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sidebar button {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    transition: background 0.3s;
+  }
+  
+  .sidebar button:hover {
+    background: #0066aa;
+  }
+  
+  /* Hero Section */
+  header.hero {
+    background: linear-gradient(to right, #0088cc, #004488);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: left;
+    margin-left: 180px;
+  }
+  
+  header.hero .overlay {
+    max-width: 600px;
+  }
+  
+  .header-top {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
+  
+  button#themeToggle {
+    background: white;
+    color: #222;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button#themeToggle:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+  }
+  
+  /* Main Sections */
+  main {
+    margin-left: 180px;
+    padding: 2rem;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  section h2 {
+    color: var(--accent);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Skills */
+  .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.2rem;
+  }
+  
+  .skill-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .skill-card:hover {
+    transform: scale(1.05);
+    background-color: var(--hover-glow);
+  }
+  
+  /* Footer */
+  footer {
+    margin-left: 180px;
+    text-align: center;
+    padding: 1rem;
+    background-color: #eee;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+  
+    .sidebar nav {
+      flex-direction: row;
+      gap: 0.5rem;
+    }
+  
+    header.hero, main, footer {
+      margin-left: 0;
+      text-align: center;
+      padding: 1rem;
+    }
+  
+    button#themeToggle {
+      margin: auto;
+    }
+  }
+  .download-cv {
+    margin-top: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .download-cv button {
+    background-color: white;
+    color: #004488;
+    border: none;
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  .download-cv button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+  }
+  

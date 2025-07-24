@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexander Tamayo | Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <nav>
+      <button onclick="scrollToSection('about')">About</button>
+      <button onclick="scrollToSection('education')">Education</button>
+      <button onclick="scrollToSection('experience')">Experience</button>
+      <button onclick="scrollToSection('skills')">Skills</button>
+      <button onclick="scrollToSection('lobby')">Lobby</button>
+      <div class="download-cv">
+        <a href="Tamayo_Resume.pdf" download>
+          <button>Download CV</button>
+        </a>
+    </nav>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="overlay">
+      <div class="profile-wrapper">
+        <div class="profile-bg"></div>
+        <div class="profile-pic">
+          <img src="profile.jpg" alt="Alexander Tamayo" />
+        </div>
+      </div>
+      <h1>Alexander George M. Tamayo</h1>
+      <p>Junior Web Developer | IT Support Enthusiast</p>
+      <p class="tagline">
+        BS in Information Systems graduate from ACLC College of Taytay. Passionate about building intuitive interfaces, maintaining systems, and deploying web tools using PHP and JavaScript — often with the help of AI-enhanced solutions.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="header-top">
+        <button id="themeToggle">🌗 Toggle Theme</button>
+      </div>
+      <h2>About Me</h2>
+        <p>
+        I’m a hardworking and detail oriented junior web developer with a strong willingness to learn and grow in every aspect of my field. While I’m freshly graduated and still gaining experience beyond my internship at B-mirk (“Friends@work”), I stay committed to mastering new technologies and improving my understanding every day.
+        </p>
+        <p>
+        My passion lies in the inner workings of computers from troubleshooting and updating hardware, to managing compatibility, system health, and maintenance workflows. I enjoy building web-based tools and interfaces, experimenting with front-end design, and using AI-assisted development strategies to streamline problem solving and boost creativity.
+        </p>
+        <p>
+        I’ll admit: sometimes I struggle to explain things, especially technical concepts out loud but I make up for it with focus, dedication, and hands-on skills that help me bring ideas to life. I’m not afraid to ask questions, dive deeper, and keep pushing forward until I get it right.
+        </p>
+
+        </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>BS in Information Systems</strong> – ACLC College of Taytay (2021–2025)</li>
+        <li><strong>General Academic Strand</strong> – Smart Achiever Academy Subig Inc. (2017–2019)</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience & Projects</h2>
+      <h3>Thesis Project: RFID Library Security System</h3>
+      <p>Designed and developed a security system for school libraries using RFID identification, built entirely in PHP and JavaScript. This project simulated entry detection, book tracking, and real-time status updates via local web interface.</p>
+
+      <h3>Internship at B-mirk Enterprises Corporation (2024–2025)</h3>
+      <ul>
+        <li>Developed an internal <strong>Storage Management System</strong> using PHP & JavaScript for asset tracking and inventory control.</li>
+        <li>Contributed to branding, logo design, and UI optimization across departments.</li>
+        <li>Collaborated with dev teams to improve internal tools and troubleshoot systems.</li>
+        <li>Explored AI tools to assist with planning, debugging, and UI prototyping for faster execution and scalability.</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">PHP</div>
+        <div class="skill-card">IT Support</div>
+        <div class="skill-card">Responsive UI Design</div>
+        <div class="skill-card">Generative AI for Web</div>
+      </div>
+    </section>
+
+    <section id="lobby">
+      <h2>The Lobby</h2>
+      <p>This is where my imagination and experimentation thrive. I maintain hardware, design basic web apps, and explore AI-generated development workflows. Whether it's dark mode toggles, secure contact forms, or anime-themed UI trials, the lobby is my digital sandbox.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>📍 Simona Subdivision, Taytay Rizal | 📧 <a href="mailto:xandertamayo20@gmail.com">xandertamayo20@gmail.com</a> | 📱 09630422517</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
